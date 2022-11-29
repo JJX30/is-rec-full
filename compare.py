@@ -1,8 +1,18 @@
 import cv2 as cv
 from cv2 import GaussianBlur
+from PIL import Image
+from io import BytesIO
+import requests
 
-img1 = cv.imread("cam8-10.jpeg")
+# image get request
+url = 'https://recsports.ufl.edu/cam/cam8.jpg'
+params = {'key': 'value'}
+response = requests.get(url)
 
+img = Image.open(BytesIO(response.content))
+
+img1 = cv.imread(img)
+cv.imshow("pic", img1)
 img2 = cv.imread("cam8-11.jpeg")
 
 person_count = 0
