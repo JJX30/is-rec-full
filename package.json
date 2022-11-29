@@ -1,0 +1,23 @@
+{
+  "name": "is-rec-full",
+  "version": "1.0.0",
+  "description": "Uses python''s cv2 library to answer the question is-rec-full?",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJX30/is-rec-full.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJX30/is-rec-full/issues"
+  },
+  "homepage": "https://github.com/JJX30/is-rec-full#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
