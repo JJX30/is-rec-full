@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  background-color: white;
+  background-image: url("../public/background.png");
 }
 
 .main {
@@ -10,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 .footer {

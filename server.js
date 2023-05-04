@@ -1,8 +1,17 @@
 const express = require("express");
-const { spawn } = require("child_process");
+const fs = require("fs");
+const axios = require("axios");
 const app = express();
 
-const childPython = spawn("python3", ["compare.py"]);
+app.get("/gym", (req, res) => {
+  axios({
+    method: "get",
+    url: "http://recsports.ufl.edu/cam/cam8.jpg",
+    responseType: "stream",
+  }).then(function (response) {
+    response.data.pipe(fs.createWriteStream("student-rec.jpg"));
+  });
+});
 
 app.get("/", (req, res) => {
   res.send("hi");
