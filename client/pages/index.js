@@ -36,12 +36,27 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Student Rec</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            {/* Make a dynamic bar that fills upp blue depending 
+            on how full gym is, below add number of people and 
+            weight room and basketball court numbers individually*/}
+            <p>
+              Find in-depth information about Next.js features and API.Find
+              in-depth information about Next.js features and API.Find in-depth
+              information about Next.js features and API.Find in-depth
+              information about Next.js features and API.Find in-depth
+              information about Next.js features and API.
+            </p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Southwest Rec </h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>
+              ind in-depth information about Next.js features and API.Find
+              in-depth information about Next.js features and API.Find in-depth
+              information about Next.js features and API.Find in-depth
+              information about Next.js features and API.Find in-depth
+              information about Next.js features and API.
+            </p>
           </a>
         </div>
       </main>
